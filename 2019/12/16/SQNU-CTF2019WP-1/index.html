@@ -10,12 +10,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="#Re###just click##
-
+    <meta name="description" content="Rejust click
 **打开exe只有四个按钮，点几下自动退出，猜想是不是有壳
 用peid进行查壳，发现是个没见过的壳。。**
 
-常规思路，将exe放入Exeinfo PE工具中,"> 
+** 常规思路，将exe放入Exeinfo PE工具中，发现是,"> 
     <meta name="author" content="hirako"> 
     <link rel="alternative" href="atom.xml" title="hirako" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -70,21 +69,17 @@
 
         </div>
         <div class="content markdown">
-            <p>#Re#<br>##just click##</p>
-<hr>
+            <h1 id="Re"><a href="#Re" class="headerlink" title="Re"></a>Re</h1><h2 id="just-click"><a href="#just-click" class="headerlink" title="just click"></a>just click</h2><hr>
 <p>**打开exe只有四个按钮，点几下自动退出，猜想是不是有壳</p>
 <p>用peid进行查壳，发现是个没见过的壳。。**</p>
 <p><img src="https://img-blog.csdn.net/20170502175642616?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFsZWNhbHRlY2g=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
-<p><strong>常规思路，将exe放入Exeinfo PE工具中，发现是C编写的</strong></p>
+<p>** 常规思路，将exe放入Exeinfo PE工具中，发现是C编写的 **</p>
 <p><img src="https://img-blog.csdn.net/20180207140010486?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTY4MjkyMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>果断换一个工具<strong>.NET Reflector</strong><br>无脑翻这个exe的目录<br>发现了一个名称是<strong>button check</strong>按钮<br>刚开始四个按钮应该跟这个有关<br>点进去看看 </p>
 <p><img src="https://img-blog.csdn.net/20170502175843119?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFsZWNhbHRlY2g=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
-<p>红色的就是按键的顺序，因为没有button0直接跳过0，按照13421234这个顺序按一遍，flag就出来了<br><strong>simCTF{Easy_To_Get_Flag_From_DotNET}</strong></p>
+<p>红色的就是按键的顺序，因为没有button0直接跳过0，按照13421234这个顺序按一遍，flag就出来了<br>** simCTF{Easy_To_Get_Flag_From_DotNET} **</p>
 <p><img src="https://img-blog.csdn.net/20170502175925839?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFsZWNhbHRlY2g=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
-<p>这里有个小问题，提交的时候发现怎么提交都不正确<br>最后才知道，出题人非常粗心，最后得提交*<em>simCTF{Easy_ToGet_Flag_From_DotNET}<br>*</em><br>#Web#</p>
-<p>##session和get##</p>
-<p>#密码#</p>
-<p>##传统知识+古典密码##</p>
-<p>根据提示，上面给了一些年份<br>比赛中提示给了一张表</p>
+<p>这里有个小问题，提交的时候发现怎么提交都不正确<br>最后才知道，出题人非常粗心，最后得提交** simCTF{Easy_ToGet_Flag_From_DotNET} **</p>
+<h1 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h1><h2 id="session和get"><a href="#session和get" class="headerlink" title="session和get"></a>session和get</h2><h1 id="密码"><a href="#密码" class="headerlink" title="密码"></a>密码</h1><h2 id="传统知识-古典密码"><a href="#传统知识-古典密码" class="headerlink" title="传统知识+古典密码"></a>传统知识+古典密码</h2><p>根据提示，上面给了一些年份<br>比赛中提示给了一张表</p>
 <p><img src="https://images2017.cnblogs.com/blog/1100338/201711/1100338-20171102173143623-1337934925.png" alt=""></p>
 <p>根据提示我们可以得到</p>
 <p><img src="https://images2017.cnblogs.com/blog/1100338/201711/1100338-20171102173233357-1036648065.png" alt=""></p>
@@ -96,7 +91,9 @@
 <p><img src="https://images2017.cnblogs.com/blog/1100338/201711/1100338-20171102173649545-1008047930.png" alt=""></p>
 <p>总算看到认识的字符了，<br>利用工具CTFCrackTools，字符密码常见的有栅栏，凯撒等，首先试一下栅栏密码<br><img src="https://images2017.cnblogs.com/blog/1100338/201711/1100338-20171102174157732-1568940970.png" alt=""></p>
 <p>这时候试着去试着把这两个密码，都去进行凯撒密码解密，最后发现第二个解密出来的密码中其中有一个有规律</p>
-
+<p><img src="https://images2017.cnblogs.com/blog/1100338/201711/1100338-20171102174411451-914861096.png" alt=""></p>
+<p>红框中发现正常英文句子，猜测为flag，提交SHUANGYU正确</p>
+<h1 id="隐写"><a href="#隐写" class="headerlink" title="隐写"></a>隐写</h1><h2 id="lsb隐写"><a href="#lsb隐写" class="headerlink" title="lsb隐写"></a>lsb隐写</h2><h2 id="打不开的文件"><a href="#打不开的文件" class="headerlink" title="打不开的文件"></a>打不开的文件</h2><h1 id="MISC"><a href="#MISC" class="headerlink" title="MISC"></a>MISC</h1><h2 id="nsctf-misc250"><a href="#nsctf-misc250" class="headerlink" title="nsctf misc250"></a>nsctf misc250</h2><h2 id=""><a href="#" class="headerlink" title=""></a></h2>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="">
