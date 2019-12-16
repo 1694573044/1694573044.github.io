@@ -10,12 +10,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="#Re##just click
+    <meta name="description" content="#Re###just click##
 
-打开exe只有四个按钮，点几下自动退出，猜想是不是有壳
-用peid进行查壳，发现是个没见过的壳。。
+**打开exe只有四个按钮，点几下自动退出，猜想是不是有壳
+用peid进行查壳，发现是个没见过的壳。。**
 
-常规思路，将exe放入Exeinfo PE工具中，发现是C编写,"> 
+常规思路，将exe放入Exeinfo PE工具中,"> 
     <meta name="author" content="hirako"> 
     <link rel="alternative" href="atom.xml" title="hirako" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -70,21 +70,20 @@
 
         </div>
         <div class="content markdown">
-            <p>#Re<br>##just click</p>
+            <p>#Re#<br>##just click##</p>
 <hr>
-<p>打开exe只有四个按钮，点几下自动退出，猜想是不是有壳</p>
-<p>用peid进行查壳，发现是个没见过的壳。。</p>
+<p>**打开exe只有四个按钮，点几下自动退出，猜想是不是有壳</p>
+<p>用peid进行查壳，发现是个没见过的壳。。**</p>
 <p><img src="https://img-blog.csdn.net/20170502175642616?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFsZWNhbHRlY2g=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
-<p>常规思路，将exe放入Exeinfo PE工具中，发现是C编写的</p>
-<p><img src="https://img-blog.csdn.net/20180207140010486?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTY4MjkyMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>果断换一个工具.NET Reflector<br>无脑翻这个exe的目录<br>发现了一个名称是button check按钮<br>刚开始四个按钮应该跟这个有关<br>点进去看看 </p>
+<p><strong>常规思路，将exe放入Exeinfo PE工具中，发现是C编写的</strong></p>
+<p><img src="https://img-blog.csdn.net/20180207140010486?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMTY4MjkyMDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""><br>果断换一个工具<strong>.NET Reflector</strong><br>无脑翻这个exe的目录<br>发现了一个名称是<strong>button check</strong>按钮<br>刚开始四个按钮应该跟这个有关<br>点进去看看 </p>
 <p><img src="https://img-blog.csdn.net/20170502175843119?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFsZWNhbHRlY2g=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
-<p>红色的就是按键的顺序，因为没有button0直接跳过0，按照13421234这个顺序按一遍，flag就出来了<br>simCTF{Easy_To_Get_Flag_From_DotNET}</p>
+<p>红色的就是按键的顺序，因为没有button0直接跳过0，按照13421234这个顺序按一遍，flag就出来了<br><strong>simCTF{Easy_To_Get_Flag_From_DotNET}</strong></p>
 <p><img src="https://img-blog.csdn.net/20170502175925839?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFsZWNhbHRlY2g=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
-<p>这里有个小问题，提交的时候发现怎么提交都不正确<br>最后才知道，出题人非常粗心，最后得提交simCTF{Easy_ToGet_Flag_From_DotNET}</p>
-<p>#Web</p>
-<p>##session和get</p>
-<p>#密码</p>
-<p>##传统知识+古典密码</p>
+<p>这里有个小问题，提交的时候发现怎么提交都不正确<br>最后才知道，出题人非常粗心，最后得提交*<em>simCTF{Easy_ToGet_Flag_From_DotNET}<br>*</em><br>#Web#</p>
+<p>##session和get##</p>
+<p>#密码#</p>
+<p>##传统知识+古典密码##</p>
 <p>根据提示，上面给了一些年份<br>比赛中提示给了一张表</p>
 <p><img src="https://images2017.cnblogs.com/blog/1100338/201711/1100338-20171102173143623-1337934925.png" alt=""></p>
 <p>根据提示我们可以得到</p>
